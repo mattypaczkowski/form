@@ -4,63 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
   <body>
     <main>
       <header class="top">
         <h1 class="tittle">Form</h1>
       </header>
+      <aside class="advert__left">
+        <img src="img/advert-left.png" alt="sky on the night"/>
+      </aside>
+      <aside class="advert__right">
+        <img src="img/advert-right.png" alt="sky on the night"/>
+      </aside>
       <form class="form">
-        <p>
+        <div class="two-inputs">
+        <p class="two-inputs__paragraph">
           <label for="firstName">First Name</label>
-          <input id="firstName" name="firstName" />
+          <input class="form__item" id="firstName" name="firstName" />
         </p>
-        <p>
+        <p class="two-inputs__paragraph"> 
           <label for="lastName">Last Name</label>
-          <input id="lastName" name="lastName" />
+          <input class="form__item" id="lastName" name="lastName" />
         </p>
+      </div>
         <p>
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" />
+          <input class="form__item" id="email" name="email" type="email" />
         </p>
         <p>
             <label for="password">Password</label>
-            <input id="password" name="password" type="password" />
+            <input class="form__item" id="password" name="password" type="password" />
           </p>
         <p>
             <label for="phoneNumber">Phone</label>
-            <input id="phoneNumber" name="phoneNumber" type="tel"/>
+            <input class="form__item" id="phoneNumber" name="phoneNumber" type="tel"/>
           </p>
         <p>
           <label for="dateOfBirth">Date of Birth</label>
-          <input id="dateOfBirth" name="dateOfBirth" />
+          <input type="date" class="form__item" id="dateOfBirth" name="dateOfBirth" />
         </p>
-        <fieldset>
+        <fieldset class="field-address">
           <legend>Address</legend>
           <p>
             <label for="streetAddress">Street Address Line</label>
-            <input id="streetAddress" name="streetAddress" />
+            <input class="form__item" id="streetAddress" name="streetAddress" />
           </p>
           <p>
             <label for="streetAddressLine2">Street Address Line 2</label>
-            <input id="streetAddressLine2" name="streetAddressLine2" />
+            <input class="form__item" id="streetAddressLine2" name="streetAddressLine2" />
           </p>
-          <p>
+          <div class="two-inputs">
+          <p class="two-inputs__paragraph"> 
             <label for="city">City</label>
-            <input id="city" name="city" />
+            <input class="form__item" id="city" name="city" />
           </p>
-          <p>
+          <p class="two-inputs__paragraph">
             <label for="postCode">Post Code</label>
-            <input id="postCode" name="postCode" />
+            <input class="form__item" id="postCode" name="postCode" />
           </p>
+          </div>
         </fieldset>
-        <p>
-          <label for="agreement">
+        <p class="form__checkbox">
+          <label for="agreement"></label>
           <input type="checkbox" checked id="agreement" name="agreement" />
-          I agree</label>
+          I agree, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nunc vehicula, accumsan ante in, laoreet urna. Fusce porttitor neque nec mi maximus, pulvinar dictum eros.
+        </label>
         </p>
-        <input type="submit" value="send">
+        <div class="button-container">
+        <input class="button" type="submit" value="send">
+        <div>
       </form>
+      
     </main>
   </body>
 </html>
